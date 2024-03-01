@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Kino rezervace lístků</title>
+</head>
+
+<body id="bgr2">
+  <header>
+    <div class="navbar">
+      <div id="filmName"></div>
+      <a id="home" href="selectscreen.html">🏠</a>
+    </div>
+  </header>
+  <main>
+    <div class="main-conteiner">
+
+      <div class="screen"></div>
+      <div class="seats-container" id="seatsContainer"></div>
+      <div id="selectedSeats">Počet vybraných sedadel: 0 Cena celkem: 0</div>
+      <button id="confirmButton">Potvrdit výběr</button>
+
+
+    </div>
+    <div id="fade-wrapper">
+      <div class="form">
+        <button id="close-window">Zavřít</button>
+        <h1>Vyplňte prosím:</h1>
+        <div class="input">
+          <label for="fname">Jméno:</label><br>
+          <input type="text" id="fname" name="fname" value=""><br>
+        </div>
+        <div class="input">
+          <label for="lname">Přijímení:</label><br>
+          <input type="text" id="lname" name="lname" value=""><br>
+        </div>
+        <div class="input">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" value=""><br>
+        </div>
+        <button id="confirmReservation">Potvrdit rezervaci</button>
+      </div>
+    </div>
+    <div id="reservationInfo"></div>
+  </main>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
